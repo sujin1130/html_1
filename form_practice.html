@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>행사 참여</legend>
+            <div>
+                <label for="username">성함: </label>
+                <input type="text" name="username" placeholder="이름을 입력하세요." autocomplete="on" required>
+            </div>
+            <div>
+                <label for="email">이메일: </label>
+                <input type="text" name="email" placeholder="xxxxx@gmail.com" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="age">나이: </label>
+                <input type="number" name="age" min="0" max="100" step="1" autocomplete="off">
+            </div>
+            <div>
+                <label for="summary">내용: </label>
+                <textarea name="summary" rows="10" cols="30" placeholder="내용 입력"></textarea>
+            </div>
+            <div>
+                <label>소속: </label>
+                <select name="type">
+                    <option value="T_AS_1">학생</option>
+                    <option value="T_AS_2">직장인</option>
+                    <option value="T_AS_3">기타</option>
+                </select>
+            </div>
+            <div>
+                <label>참석 일자: </label>
+                <input type="checkbox" name="type_2_1" value="1day">
+                <label for="type_2_1">1일차</label>
+                <input type="checkbox" name="type_2_2" value="1week">
+                <label for="type_2_2">2일차</label>
+                <input type="checkbox" name="type_2_3" value="1month">
+                <label for="type_2_3">3일차</label>
+            </div>
+            <div>
+                <input type="radio" name="type_3" value="emergency">
+                <label for="type_3_1">불참</label>
+                <input type="radio" name="type_3" value="nomal" checked>
+                <label for="type_3_2">참여</label>
+            </div>
+            <div>
+                <button type="submit">제출</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
